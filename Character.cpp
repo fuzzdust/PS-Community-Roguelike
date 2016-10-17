@@ -20,6 +20,10 @@ int character::GetY(void){
 	return y;
 }
 
+void character::SetXY(int nx, int ny){
+	x = nx;
+	y = ny;
+}
 /* 
 int GetHits;	//Next to implement
 int GetLevel;

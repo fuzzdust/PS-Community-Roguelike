@@ -24,6 +24,8 @@ class character {
 		int GetExp();
 		int GetExpToNextLevel();
 		
+		void SetXY(int,int);
+		
 		character(int,int);
 		~character();		
 };
