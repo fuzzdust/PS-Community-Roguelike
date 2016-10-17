@@ -17,12 +17,12 @@ class character {
 		char GetCharBody();
 		int GetX();
 		int GetY();
-		int GetHits;
-		int GetLevel;
-		int GetGold;
-		int GetArmor;
-		int GetExp;
-		int GetExpToNextLevel;
+		int GetHits();
+		int GetLevel();
+		int GetGold();
+		int GetArmor();
+		int GetExp();
+		int GetExpToNextLevel();
 		
 		character(int,int);
 		~character();		
