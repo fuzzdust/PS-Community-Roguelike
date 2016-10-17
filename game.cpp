@@ -1,11 +1,10 @@
 #include <iostream>
+
+#include "Character.h"
+
 using namespace std;
 
-struct character {
-	char body = '@';
-	int x = 1;
-	int y = 1;
-}ch;
+character Player(1,2);
 
 struct map{
 	
@@ -33,7 +32,9 @@ struct map{
     }
     
     void draw_character() {
-        game_map[ch.x][ch.y] = ch.body;
+    	int x = Player.GetX();
+    	int y = Player.GetY();
+        game_map[x][y] = Player.GetCharBody();
     }
 }handle;
 
@@ -45,6 +46,7 @@ void draw_world() {
 
 int main() {
     // intro message
+    
     cout << "\n\t\t Welcome To Mission impossible Rogue !" << endl
          << "Start the game: y" << endl 
          << "Quit: q" << endl;
